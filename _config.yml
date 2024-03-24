@@ -3,6 +3,8 @@ description: World Space / VR UI Framework for Unity
 theme: just-the-docs
 
 url: https://LacombeJ.github.io/xi-docs-site
+logo: "/assets/tobia-logo.png"
+favicon_ico: "/assets/tobia-logo.png"
 
 callouts:
   highlight:

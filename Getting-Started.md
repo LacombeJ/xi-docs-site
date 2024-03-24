@@ -26,7 +26,7 @@ nav_order: 1
 - Add XI Document component to each UI Document gameobject
 
 {: .note }
-> You can create your own pixel panel as long as you set the following:
+> You can create your own panel asset and set the following:
   - Scale Mode = Constant Pixel Size
   - Theme Style Sheet = UnityDefaultRuntimeTheme
 
