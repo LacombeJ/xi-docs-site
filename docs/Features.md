@@ -8,8 +8,8 @@ nav_order: 3
 
 #### UI Toolkit Backend
 - Simplified yet powerful event handling system
-- Similar API to UITK (event callbacks, manipulators)
-- Can easily build UI using Unity's UI Builder
+- Similar API to UITK (elements, event callbacks, manipulators)
+- Can easily build UI using Unity's UI Builder and UXML
 
 #### Style and Themes
 - Styleable & themeable UI with USS
