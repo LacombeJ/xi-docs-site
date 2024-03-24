@@ -18,14 +18,14 @@ parent: Elements
 
 An element that can be pressed to toggle on.
 
-#### Fields
+### Fields
 
 | Field   | Type           | Description                                    |
 | ------------------------------------------------------------------------- |
 | Label            | string         | Name of the field                     |
 | Value            | bool           | Boolean value of the radio button     |
 
-#### Events
+### Events
 
 | Event                   | Description                                     |
 | ------------------------------------------------------------------------- |
@@ -38,7 +38,7 @@ An element that can be pressed to toggle on.
 
 An element that contains a selection of radio buttons where one can be selected as an option.
 
-#### Fields
+### Fields
 
 | Field   | Type           | Description                                    |
 | ------------------------------------------------------------------------- |
@@ -46,7 +46,7 @@ An element that contains a selection of radio buttons where one can be selected 
 | Index            | int            | Current item index                    |
 | Text             | string         | Current item text                     |
 
-#### Events
+### Events
 
 | Event                   | Description                                     |
 | ------------------------------------------------------------------------- |

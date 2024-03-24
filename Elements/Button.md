@@ -7,8 +7,6 @@ parent: Elements
 
 # Button
 
-### Elements
-
 | XI Element | UITK Element |
 | ------------------------- |
 | [XIButton](#xibutton) | [Button](https://docs.unity3d.com/Manual/UIE-uxml-element-Button.html){:target="_blank" rel="noopener"} |
@@ -19,13 +17,13 @@ parent: Elements
 
 An element that can be pressed to execute an action.
 
-#### Fields
+### Fields
 
 | Field   | Type           | Description                                    |
 | ------------------------------------------------------------------------- |
 | OnClick | Action         | Action that is executed when button is clicked |
 
-#### Events
+### Events
 
 *(none)*
 

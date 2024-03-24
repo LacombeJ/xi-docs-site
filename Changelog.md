@@ -10,4 +10,4 @@ nav_order: 7
 
 ### Added
 
-- Extended Interface (XI) initial release
+- First release

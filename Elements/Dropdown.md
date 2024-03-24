@@ -17,7 +17,7 @@ parent: Elements
 
 An element that allows the selection between multiple items.
 
-#### Fields
+### Fields
 
 | Field   | Type           | Description                                    |
 | ------------------------------------------------------------------------- |
@@ -25,7 +25,7 @@ An element that allows the selection between multiple items.
 | Index            | int            | Current item index                    |
 | Text             | string         | Current item text                     |
 
-#### Events
+### Events
 
 | Event                   | Description                                     |
 | ------------------------------------------------------------------------- |

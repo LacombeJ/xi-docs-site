@@ -6,7 +6,7 @@ nav_order: 6
 
 # Roadmap
 
-### Elements
+## Elements
 - __Anchor:__ Anchored elements / tooltips
 - __Image:__ Image UI component
 - __Video:__ Video player component
@@ -14,17 +14,17 @@ nav_order: 6
 - __Context Menu:__ Context menus
 - __Tab:__ Tabs and tabbed views
 
-### Active
+## Active
 - __Document Scale Modes:__ Ability to choose how document scales with scaling game object transform
 - __Billboard:__ Billboard UI displays
 - __Themes:__ Built-in themes and styles
 
-### Next
+## Next
 - __Gradients:__ Support for rendering HTML/CSS style gradient backgrounds
 - __Shadows:__ Rendering HTML/CSS style shadow boxes
 - __Numpad:__ Numpad keyboard sample (for editing number fields)
 
-### Planned
+## Planned
 - __Curved UI:__ Ability to curve UI surfaces cylindrically, and radially
 - __Per Element Raycasting:__ Because elements may have a different depth-offset than the document or it's parent
 - __Antialiasing:__ Higher quality anti-aliasing

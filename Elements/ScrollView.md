@@ -17,13 +17,13 @@ parent: Elements
 
 An element that displays content inside a scrollable area.
 
-#### Fields
+### Fields
 
 | Field   | Type           | Description                                    |
 | ------------------------------------------------------------------------- |
 | ScrollOffset     | Vector2        | Current scrolling position            |
 
-#### Events
+### Events
 
 | Event                   | Description                                     |
 | ------------------------------------------------------------------------- |

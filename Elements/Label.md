@@ -17,13 +17,13 @@ parent: Elements
 
 An element that displays some text.
 
-#### Fields
+### Fields
 
 | Field   | Type           | Description                                    |
 | ------------------------------------------------------------------------- |
 | Text             | string         | String that the label displays        |
 
-#### Events
+### Events
 
 *(none)*
 

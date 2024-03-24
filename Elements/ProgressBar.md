@@ -7,8 +7,6 @@ parent: Elements
 
 # Progress Bar
 
-### Elements
-
 | XI Element | UITK Element |
 | ------------------------- |
 | [XIProgressBar](#xiprogressbar) | [ProgressBar](https://docs.unity3d.com/Manual/UIE-uxml-element-ProgressBar.html){:target="_blank" rel="noopener"} |
@@ -19,14 +17,14 @@ parent: Elements
 
 An element that indicates how much progress has been completed out of some total.
 
-#### Fields
+### Fields
 
 | Field   | Type           | Description                                    |
 | ------------------------------------------------------------------------- |
 | Label            | string         | Name of the field                     |
 | Value            | float          | Float value of the progress           |
 
-#### Events
+### Events
 
 *(none)*
 

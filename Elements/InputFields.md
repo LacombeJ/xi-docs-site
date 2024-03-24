@@ -7,8 +7,6 @@ parent: Elements
 
 # Input Fields
 
-### Elements
-
 | XI Element | UITK Element |
 | ------------------------- |
 | [XITextField](#xitextfield) | [TextField](https://docs.unity3d.com/Manual/UIE-uxml-element-TextField.html){:target="_blank" rel="noopener"} |
@@ -24,14 +22,14 @@ parent: Elements
 
 An element that allows users to edit a string / line of text
 
-#### Fields
+### Fields
 
 | Field            | Type           | Description                           |
 | ------------------------------------------------------------------------- |
 | Label            | string         | Name of the field                     |
 | Value            | string         | Text value of the input field         |
 
-#### Events
+### Events
 
 | Event                   | Description                                     |
 | ------------------------------------------------------------------------- |

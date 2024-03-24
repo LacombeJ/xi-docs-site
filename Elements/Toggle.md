@@ -17,14 +17,14 @@ parent: Elements
 
 An element that can be pressed to toggle a checkbox on and off.
 
-#### Fields
+### Fields
 
 | Field   | Type           | Description                                    |
 | ------------------------------------------------------------------------- |
 | Label            | string         | Name of the field                     |
 | Value            | bool           | Boolean value of the toggle           |
 
-#### Events
+### Events
 
 | Event                   | Description                                     |
 | ------------------------------------------------------------------------- |
