@@ -23,3 +23,23 @@ Inputs can also be simulated by sending custom input events with `XIManager.Disp
 ## Handling Events
 Events are handled in a similar way as UITK. Call `RegisterCallback` with the approate XIEvent to execute actions when this event is received.
 
+## Events Table
+
+| Event | Type | Fields | Description |
+| ----------------------------------- |
+| PositionEvent | Input | `Vector3` Position | Hovering cursor position |
+| PushEvent | Input | `int` Button | Cursor button press down |
+| PopEvent | Input | `int` Button | Cursor button press up |
+| AxixEvent | Input | `Vector2` Axis | Cursor axis delta |
+| CodePushEvent | Input | `Code` Code | Code/key press down |
+| CodePopEvent | Input | `Code` Code | Code/key push up |
+| EnterEvent | Intermediate | `Vector3` Position | Cursor enters element |
+| MotionEvent | Intermediate | `Vector3` Position, `Vector3` Delta, `float` Proximity | Cursor moves within element |
+| ExitEvent | Intermediate | `Vector3` Position | Cursor leaves element
+| HoverEnterEvent | Interface | - | First pointer enters element |
+| HoverExitEvent | Interface | - | Last pointer exits element |
+| ExecuteEvent | Interface | `int` Button | Push and pop while hovering |
+| CodeEvent | Interface | `Code` Code | Repeated after CodePush and stopped after CodePop or lost of focus |
+| ChangeEvent\<T> | Interface | `T` Previous, `T` New | Editable field value changed |
+| FocusEvent | Interface | `FocusType` FocusType | Focusable element gains or loses focus |
+| ScrollEvent | Interface | `Vector2` Scroll | Element view has been scrolled / panned | 
