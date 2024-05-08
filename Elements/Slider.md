@@ -21,7 +21,7 @@ An element that uses a dragger to choose a float between a range of values.
 
 | Field   | Type           | Description                                    |
 | ------------------------------------------------------------------------- |
-| Title            | string         | Name of the field                     |
+| Label            | string         | Name of the field                     |
 | Value            | float          | Float value of the slider             |
 
 ### Events

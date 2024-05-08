@@ -33,19 +33,17 @@ nav_order: 1
 
 ### Scene Preparation
 - Add XI Manager to the scene
-- Add XI Standard Renderer to the scene's XI Manager
+- `Create > XI > XI Render Config>` asset 
+- Add XI Standard Renderer to the scene's XI Manager and add the XI Render Config to it
 - Add UI Document for any document you want in the scene
 - Add the `XI Pixel Panel` panel settings to each added UI Document
-  - Or you could create your own panel settings with:
-    - Scale Mode = Constant Pixel Size
-    - Theme Style Sheet = UnityDefaultRuntimeTheme
 - Attach UXML documents under "Source Asset" in each UI Document component
 - Add XI Document component to each UI Document gameobject and set the Manager to the scenes XI Manager
 
 {: .note }
-> You can create your own panel asset and set the following:
+> You can also create your own panel asset and set the following:
   - Scale Mode = Constant Pixel Size
-  - Theme Style Sheet = UnityDefaultRuntimeTheme
+  - Theme Style Sheet = `XI DefaultRuntimeTheme` (preferred)
 
 ### Setup (XI Shapes Renderer)
 

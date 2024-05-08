@@ -1,7 +1,7 @@
 ---
 title: Progress Bar
 layout: page
-nav_order: 19
+nav_order: 9
 parent: Elements
 ---
 

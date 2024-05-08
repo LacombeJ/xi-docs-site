@@ -15,18 +15,17 @@ nav_order: 6
 - __Tab:__ Tabs and tabbed views
 
 ## Active
-- __Document Scale Modes:__ Ability to choose how document scales with scaling game object transform
+- __Performance Optimizations:__ Draw call batching, allocation reduction, moving logic to GPU
 - __Billboard:__ Billboard UI displays
 - __Themes:__ Built-in themes and styles
 
 ## Next
-- __Gradients:__ Support for rendering HTML/CSS style gradient backgrounds
 - __Shadows:__ Rendering HTML/CSS style shadow boxes
+- __Blur Filters:__ Guassian blur filters for UI and scene
 - __Numpad:__ Numpad keyboard sample (for editing number fields)
+- __2D / screenspace support:__ Rendering UI in 2D
 
 ## Planned
 - __Curved UI:__ Ability to curve UI surfaces cylindrically, and radially
 - __Per Element Raycasting:__ Because elements may have a different depth-offset than the document or it's parent
-- __Antialiasing:__ Higher quality anti-aliasing
-- __Standard Context Renderer:__ Support for context rendering for the standard renderer
-- __3D UI:__ 3-dimensional UI elements (prisms, volumetric lines, etc)
+- __3D UI:__ 3-dimensional UI elements (prisms, volumetric lines, shapes with thickness, etc)

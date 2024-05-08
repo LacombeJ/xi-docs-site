@@ -6,7 +6,13 @@ parent: Documentation
 
 # Renderer
 
-## Standard vs Shapes Renderer
-- Custom / shadergraph materials only supported with Standard renderer
-- Standared renderer does not support complete context render api
-- Shapes Renderer has higher quality anti-aliasing
+## Standard Renderer
+The core renderer of XI. This includes a lot of features such as:
+- Shadergraph support
+- High quality local antialiasing (even if AA is disabled in project)
+- Linear gradient background rendering
+- High quality TMP text rendering (with layout accuracy matching UITK)
+
+## Shapes Renderer
+This is a provided sample that features a renderer implementation using the Shapes asset.
+- A lot of features are missing from shapes renderer but it serves a good example on how to implement your own renderer

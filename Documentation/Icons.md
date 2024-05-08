@@ -10,22 +10,21 @@ For free and open source SVG icons visit my favorite icon collection at [https:/
 
 The procedure of importing an SVG an including it in an XI document is straightforward.
 
-1. If not added already, add the Unity VectorGraphics package to your project.
+1. Save an SVG icon in your assets.
 
-2. Save an SVG icon in your assets.
-
-3. Modify the SVG source to change any stroke (color) property from currentColor to "white". And (optionally) change the stroke-width to something you prefer.
+2. Modify the SVG source to change any stroke (color) property from currentColor to "white". And (optionally) change the stroke-width to something you prefer.
 
 ```properties
 stroke="white"
 stroke-width="1"
 ```
 
-4. Update SVG import settings and set:
+3. Update SVG import settings and set:
    - __Generated Asset Type:__ Texture2D
    - __Wrap Mode:__ Clamp
+   - __Texture Size:__ 512 (optional, better quality for large icons)
 
-5. In a custom script referencing a document with the element you want to render the SVG in, add a serialized property field, query the element, and apply the SVG like below:
+4. In a custom script referencing a document with the element you want to render the SVG in, add a serialized property field, query the element, and apply the SVG like below:
 
 ```cs
 public Texture MyIconTexture;
@@ -38,4 +37,4 @@ void OnEnable()
 }
 ```
 
-6. Set the texture property value in the inspector with the SVG asset
+5. Set the texture property value in the inspector with the SVG asset
