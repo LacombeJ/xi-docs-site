@@ -9,13 +9,14 @@ nav_order: 8
 ## Nothing Rendering
 - If using URP, make sure XI_URP preprocessor define has been added
 - Try adding "XI Render Feature" to URP asset
+- Make sure the XIDocument has the Manager field set to a Manager in scene
 - If using Shapes adding "Shapes Render Feature" to URP asset
 
 ## Background Rect is not rendering
 - If the background color / border is not rendering but text and icons are, check the XI Standard Renderer component to see if the "Rect Material" is applied 
 
 ## Overflow is not being clipped
-- Check if the "Use Clip" flag in the Standar renderer component is enabled and if a functioning clip material is assigned
+- Check if the "Use Clip" flag in the standard renderer config is enabled and if a functioning clip material is assigned
 
 ## Incorrect height / layout sizes
 - Try adding UnityDefaultRuntimeTheme to panel settings

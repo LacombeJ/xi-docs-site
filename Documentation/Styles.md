@@ -104,6 +104,12 @@ Similar to html/css background-image. This value can be used to render gradients
 --xi-background: linear-gradient(30deg in hsl, red, blue); /* This interpolates in HSL space*/
 ```
 
+### XI Coloring
+This is used to set color targets for different sources. For example, instead of coloring background images with `-unity-background-image-tint-color`, you can define this property to use the text/font `color` property instead.
+```css
+--xi-coloring: background-image color;
+```
+
 ### XI Transition
 The `--xi-transition` uss property is a custom property used to animate custom xi properties. By default, Unity UITK does not animate custom properties so this needs to be handled within XI.
 
@@ -120,8 +126,6 @@ __Note:__ The value is a string surronded by quotes although it follows the same
 These properties can only be set and modified via code (not available with uss).
 
 - BackgroundFilter: Texture that applies a masking/filter over the rendered rect background color (or gradient)
-- BackgroundImage: Texture rendered with unityBackgroundImageTintColor
-- ForegroundImage: Texture rendered with text/font color
 - Visual: A collection of properties used for custom rendering
 
 ## Pseudo States

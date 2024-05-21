@@ -6,6 +6,46 @@ nav_order: 7
 
 # Changelog
 
+## [1.2.0] - 2024-05-21
+
+### Added
+- XIDropdown additional constructor that accepts choice list 
+- Layout property getter for XIElement
+- XIPanel to manage document attachment in XIManager
+- Custom style:
+  - `--xi-coloring` for choosing different color targets for source properties
+- Stereo support macros in xi shaders
+- Ability to change render pass event in config
+- OnPointerMiss callback, useful for detecing when a pointer input hasn't hit a document
+
+### Fixed
+- Performance issues resolved with reducing GC allocations
+- Performance issues with clipping update
+- Performance issues with hierarchy update
+- XIHeading and XIParagraph elements addeded to registry
+- Stylesheet updater and inherited style propagation
+  - This fixes weird text issues / glitches found when hovering over text fields (font seemed to change during hover)
+- XIDocument updates when UIDocument visual tree asset is modified
+- Null exception by checking for null materials on draw mesh calls
+- UXML style source paths now point to local paths
+- Issues with rendering XI document in VR/Quest/stereo environment
+- Issues found in build
+  - calling DirtyStyleSheets while not in editor
+  - Profiler usage while non in editor 
+
+### Changed
+- uint keys are used for style property logic, internally 
+- Structs are used in places of classes where reasonable
+- Hierarchy update logic is more efficient
+- XIDocument attachment logic with XIManager and XIPanel
+- Background images are now handled with unity property 'background-image'
+- Demo icons are no longer serialized properties in document manager but are set within uss
+
+### Removed
+- XIImage and foreground image property
+- Keyboard SVG vector icons (Keyboard now contains Texture2D icons only)
+- StencilScope class usage / allocations in render pass calls
+
 ## [1.1.0] - 2024-05-07
 
 ### Added

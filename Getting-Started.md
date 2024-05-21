@@ -26,7 +26,8 @@ nav_order: 1
 
 #### URP
 - Add `XI_URP` scripting define symbol
-- Configre URP asset to include `XI Render Feature`
+- Configure URP asset to include `XI Render Feature`
+- Configure URP to enable Depth and Opaque textures
 
 #### HDRP
 - Add `XI_HDRP` scripting define symbol
