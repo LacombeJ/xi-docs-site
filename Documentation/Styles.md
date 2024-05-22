@@ -64,12 +64,10 @@ Emission values that can be applied to individual colors for emissive glow effec
 ```
 
 ### XI Image Rotation and Scale
-Rotation and scale values for background and foreground images. 
+Rotation and scale values for background images. 
 ```css
 --xi-background-image-rotation: 30;
 --xi-background-image-scale: 0.5;
---xi-foreground-image-rotation: 150;
---xi-foreground-image-scale: 1.0;
 ```
 
 ### XI Font Weight
@@ -109,6 +107,28 @@ This is used to set color targets for different sources. For example, instead of
 ```css
 --xi-coloring: background-image color;
 ```
+
+### XI Cursor Pass
+This is used to pass classes from hovered elements to cursor/pointer display. The display must be enabled under XIManager and after you can style like so:
+```css
+Button {
+    --xi-cursor-pass: cursor-hovering-button; /* choose any class name */
+}
+
+.xi-cursor {
+    transition: 0.3s border-color, 0.15s width, 0.15s height, 0.15s translate, 0.15s border-width;
+}
+
+/* use the chosen class name here */
+.xi-cursor.cursor-hovering-button {
+    border-color: rgba(0, 128, 255, 1.0);
+    width: 4px;
+    height: 4px;
+    translate: -2px -2px;
+    border-width: 2px;
+}
+```
+In the example above, the class name `cursor-hovering-button` is chosen to be applied to the cursor when it is hovering over a button. 
 
 ### XI Transition
 The `--xi-transition` uss property is a custom property used to animate custom xi properties. By default, Unity UITK does not animate custom properties so this needs to be handled within XI.
