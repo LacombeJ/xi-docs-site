@@ -6,10 +6,28 @@ nav_order: 7
 
 # Changelog
 
+## [1.2.1] - 2024-05-22
+
+### Added
+
+- Cursor display element
+- Custom style:
+  - `--xi-cursor-pass` for passing class from hovered elements to cursor/pointer display
+
+### Fixed
+
+- Asset is now installed as a package
+- XIDocument modals are applied with the UXML embedded stylesheets from document root
+
+### Changed
+
+- Asset installation has been moved to "Packages"
+
 ## [1.2.0] - 2024-05-21
 
 ### Added
-- XIDropdown additional constructor that accepts choice list 
+
+- XIDropdown additional constructor that accepts choice list
 - Layout property getter for XIElement
 - XIPanel to manage document attachment in XIManager
 - Custom style:
@@ -19,6 +37,7 @@ nav_order: 7
 - OnPointerMiss callback, useful for detecing when a pointer input hasn't hit a document
 
 ### Fixed
+
 - Performance issues resolved with reducing GC allocations
 - Performance issues with clipping update
 - Performance issues with hierarchy update
@@ -31,10 +50,11 @@ nav_order: 7
 - Issues with rendering XI document in VR/Quest/stereo environment
 - Issues found in build
   - calling DirtyStyleSheets while not in editor
-  - Profiler usage while non in editor 
+  - Profiler usage while non in editor
 
 ### Changed
-- uint keys are used for style property logic, internally 
+
+- uint keys are used for style property logic, internally
 - Structs are used in places of classes where reasonable
 - Hierarchy update logic is more efficient
 - XIDocument attachment logic with XIManager and XIPanel
@@ -42,6 +62,7 @@ nav_order: 7
 - Demo icons are no longer serialized properties in document manager but are set within uss
 
 ### Removed
+
 - XIImage and foreground image property
 - Keyboard SVG vector icons (Keyboard now contains Texture2D icons only)
 - StencilScope class usage / allocations in render pass calls
