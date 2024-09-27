@@ -1,7 +1,7 @@
 ---
 title: FAQs & Issues
 layout: page
-nav_order: 8
+nav_order: 9
 ---
 
 # FAQs & Issues
@@ -44,3 +44,6 @@ nav_order: 8
 
 ## Invalid Image Specified Warning
 - This warning message can be seen with Vector Images in UI Builder even if they have the proper references. Not sure if this is a Unity bug but after some combination of reassigning images in UI builder, saving, closing, and reopening again, this error went away.
+
+## Textures are blurry
+- Try to enable "Anisotropic Textures" by setting `Project Settings > Quality > Rendering > Textures > Anisotropic Textures` to `Forced On`

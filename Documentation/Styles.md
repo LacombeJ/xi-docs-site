@@ -45,48 +45,62 @@ With this you can dynamically add DarkTheme or LightTheme to the XIDocument styl
 ### XI Depth
 Value (in pixels) that determines how much an element is "pushed" in. To "pop" an element out in front of its parent, assign a negative depth value.
 ```css
---xi-depth: -4;
+.example {
+    --xi-depth: -4;
+}
 ```
 
 ### XI Z Index
 Similar to html/css index. Determines rendering order (only for elements of the same depth).
 ```css
---xi-z-index: 10;
+.example {
+    --xi-z-index: 10;
+}
 ```
 
 ### XI Emissions
 Emission values that can be applied to individual colors for emissive glow effect. Value of `0.0` applies no change to color, while a value of `1.0` will multiply the color by 2. Bloom needs to be enabled in project / scene for this to work.
 ```css
---xi-color-emission: 1.0;
---xi-background-emission: 0.5;
---xi-border-emission: 1.5;
---xi-background-image-emission: 0;
+.example {
+    --xi-color-emission: 1.0;
+    --xi-background-emission: 0.5;
+    --xi-border-emission: 1.5;
+    --xi-background-image-emission: 0;
+}
 ```
 
 ### XI Image Rotation and Scale
 Rotation and scale values for background images. 
 ```css
---xi-background-image-rotation: 30;
---xi-background-image-scale: 0.5;
+.example {
+    --xi-background-image-rotation: 30;
+    --xi-background-image-scale: 0.5;
+}
 ```
 
 ### XI Font Weight
 Similar to html/css font-weight properties. This range from 100 (thinner fonts) to 900 (bolder) fonts.  This only works when font-weights are set on the active TMP font asset. See [Fonts](docs/Documentation/Fonts) for more.
 ```css
---xi-font-weight: 100;
+.example {
+    --xi-font-weight: 100;
+}
 ```
 
 ### XI Text Decoration
 Similar to html/css text-decoration-line. Used to render underline and strike-through / line-through text.
 ```css
---xi-text-decoration: line-through;
---xi-text-decoration: underline;
+.example {
+    --xi-text-decoration: line-through;
+    --xi-text-decoration: underline;
+}
 ```
 
 ### XI Font Family
 Similar to html/css font-family. Used to set fonts based on names. This property takes a list of names in order of fallback precedence. The first font will be preferred if it exists.
 ```css
---xi-font-family: 'Noto Sans', 'Liberation Sans';
+{
+    --xi-font-family: 'Noto Sans', 'Liberation Sans';
+}
 ```
 
 ### XI Background
@@ -96,16 +110,20 @@ You can find really nice web gradients with the following site:
 Similar to html/css background-image. This value can be used to render gradients with an optional rotational parameter and color space paramter.
 
 ```css
---xi-background: linear-gradient(red, blue);
---xi-background: linear-gradient(149deg, #00DBDE 0%, #FC00FF 100%);
---xi-background: linear-gradient(149deg, #00DBDE 0%, red 50%, #FC00FF 100%);
---xi-background: linear-gradient(30deg in hsl, red, blue); /* This interpolates in HSL space*/
+.example {
+    --xi-background: linear-gradient(red, blue);
+    --xi-background: linear-gradient(149deg, #00DBDE 0%, #FC00FF 100%);
+    --xi-background: linear-gradient(149deg, #00DBDE 0%, red 50%, #FC00FF 100%);
+    --xi-background: linear-gradient(30deg in hsl, red, blue); /* This interpolates in HSL space*/
+}
 ```
 
 ### XI Coloring
 This is used to set color targets for different sources. For example, instead of coloring background images with `-unity-background-image-tint-color`, you can define this property to use the text/font `color` property instead.
 ```css
---xi-coloring: background-image color;
+.example {
+    --xi-coloring: background-image color;
+}
 ```
 
 ### XI Cursor Pass
@@ -133,9 +151,11 @@ In the example above, the class name `cursor-hovering-button` is chosen to be ap
 ### XI Transition
 The `--xi-transition` uss property is a custom property used to animate custom xi properties. By default, Unity UITK does not animate custom properties so this needs to be handled within XI.
 
-__Note:__ The value is a string surronded by quotes although it follows the same syntax as the normal `transition` property
+This follows the same syntax as the normal `transition` property but only accepts "--xi" custom properties.
 ```css
---xi-transition: "0.3s --xi-depth, 0.3s --xi-color-emission, 0.3s --xi-border-emission";
+.example {
+    --xi-transition: 0.3s --xi-depth, 0.3s --xi-color-emission, 0.3s --xi-border-emission;
+}
 ```
 
 ### Other

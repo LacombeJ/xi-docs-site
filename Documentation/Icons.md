@@ -26,15 +26,20 @@ stroke-width="1"
 
 4. In a custom script referencing a document with the element you want to render the SVG in, add a serialized property field, query the element, and apply the SVG like below:
 
-```cs
-public Texture MyIconTexture;
+    ```cs
+    public Texture MyIconTexture;
 
-void OnEnable()
-{
-    var document = GetComponent<XIDocument>();
-    var iconElement = document.Root.Q<XIElement>("icon-element-name");
-    iconElement.Style.BackgroundImage.Texture = MyIconTexture;
-}
-```
+    void OnEnable()
+    {
+        var document = GetComponent<XIDocument>();
+        var iconElement = document.Root.Q<XIElement>("icon-element-name");
+        iconElement.Style.BackgroundImage.Texture = MyIconTexture;
+    }
+    ```
 
 5. Set the texture property value in the inspector with the SVG asset
+
+6. Enable "Anisotropic Textures" by setting `Project Settings > Quality > Rendering > Textures > Anisotropic Textures` to `Forced On`
+
+{: .note }
+> The VectorGraphics package apparently does not generate mipmaps for SVG images. I believe it is because these images are meant to be used in screen space where viewed at one distance. Because XI is intended to be used in 3D/VR, images can be viewed at various distances and perspectives. XI internally generates mipmaps for images that do not have mipmaps which can result in higher quality image rendering.

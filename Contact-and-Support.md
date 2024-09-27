@@ -1,7 +1,7 @@
 ---
 title: Contact & Support
 layout: page
-nav_order: 9
+nav_order: 10
 ---
 
 # Contact & Support

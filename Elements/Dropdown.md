@@ -24,6 +24,7 @@ An element that allows the selection between multiple items.
 | Label            | string         | Name of the field                     |
 | Index            | int            | Current item index                    |
 | Text             | string         | Current item text                     |
+| Value            | string         | Current string text shown             |
 | Choices          | List\<string>  | List of dropdown choice items         |
 
 ### Events

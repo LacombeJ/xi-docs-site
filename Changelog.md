@@ -1,10 +1,41 @@
 ---
 title: Changelog
 layout: page
-nav_order: 7
+nav_order: 8
 ---
 
 # Changelog
+
+## [1.3.0] - 2024-09-26
+
+### Added
+
+- Mipmap texture generation, for smooth texture/SVG rendering at different 3D perspectives
+- XIConsole element (experimental / in development)
+- XIDropdown "Value" property getter/setter
+- XILabel string text constructor
+- XIElement `Remove` element method
+
+### Fixed
+
+- Performance optimizations with DepthSort
+- Performance optimizations with standard renderer
+  - Using structs instead of per-frame object allocations
+  - Update caching and memory pooling
+- Performance optimizations in animation updater
+- ComputeTextDimensions issue introduced in Unity 6
+- HDRP render feature
+- TMP submesh / text rendering
+- Font weight rendering
+- Clip/stencil texture causing faded UI elements in VR/stereo
+
+### Changed
+
+- fwidth aliased factor, for smoother border rect rendering
+- XIStyleSheet split into multiple different USS modules
+- XI no longer requires configuration assets, will use default resource values if not provided
+- XIManager now takes an optional XIConfiguration
+- URP default RenderPassEvent changed to BeforeRenderingTransparents (for common VR use case)
 
 ## [1.2.1] - 2024-05-22
 

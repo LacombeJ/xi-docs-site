@@ -6,7 +6,7 @@ parent: Documentation
 
 # Events
 
-XI uses a custom event system because of difficulties with simulating events with the UITK event system. With only using he UITK event system it is difficult to take control of event propagation and dispatching, simulating actions based on custom input, and simulating focus and capture actions with a world-space (non screen-space) UI system. So, a series of "Controllers" were made to dispatch events and execute UI actions without using UITK.
+XI uses a custom event system because of difficulties with simulating events with the UITK event system. With only using the UITK event system it is difficult to take control of event propagation and dispatching, simulating actions based on custom input, and simulating focus and capture actions with a world-space (non screen-space) UI system. So, a series of "Controllers" were made to dispatch events and execute UI actions without using UITK.
 
 Events are broken down into the following categories:
 1. Input Events: created directly from inputs

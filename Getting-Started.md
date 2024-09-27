@@ -10,6 +10,9 @@ nav_order: 1
 - Shader Graph
 - "com.unity.render-pipelines.core": "14.0.9"
 
+### Optional / Recommended
+- "com.unity.vectorgraphics": "2.0.0-preview.24" (some samples use SVG icons)
+
 ## Setup
 
 - Import TextMeshPro essentials
@@ -33,9 +36,15 @@ nav_order: 1
 - Add `XI_HDRP` scripting define symbol
 
 ### Scene Preparation
+
+#### Quick Start
+- Import the `Demo` sample found in `Package Manager > XI Framework > Samples > Demo`
+- Open `Assets > Samples > XI Framework > X.X.X > Demo > Demo Scene.unity`
+- 3D UI should be rendered and interactible on play if the above steps were followed
+
+#### Manual Setup
 - Add XI Manager to the scene
-- `Create > XI > XI Render Config>` asset 
-- Add XI Standard Renderer to the scene's XI Manager and add the XI Render Config to it
+- Add XI Standard Renderer to the scene's XI Manager
 - Add UI Document for any document you want in the scene
 - Add the `XI Pixel Panel` panel settings to each added UI Document
 - Attach UXML documents under "Source Asset" in each UI Document component
@@ -45,6 +54,14 @@ nav_order: 1
 > You can also create your own panel asset and set the following:
   - Scale Mode = Constant Pixel Size
   - Theme Style Sheet = `XI DefaultRuntimeTheme` (preferred)
+
+### Optional Configuration
+
+{: .note }
+> As of version 1.3.0, configuration assets are optional. Default settings will be used when configurations are not provided.
+
+- `Create > XI > XI Configuration` asset and add the asset to the `XI Manager` in the scene
+- `Create > XI > XI Render Config` asset and add the asset to the `XI Standard Renderer` in the scene
 
 ### Setup (XI Shapes Renderer)
 

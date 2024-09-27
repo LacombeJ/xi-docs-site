@@ -14,6 +14,7 @@ XI was made to bring world space support to UITK. Unlike the [older UI systems](
 
 ## Quick Links
 - Visit [Getting Started](Getting-Started) to learn how to setup XI in your project
+- See [Usage](Usage) for an example of how to use the XI api
 - Browse the [Documentation](Documentation) to learn how to use the API
 - Check out the [Features](Features) to find out what is supported
 - Take a look at the [Showcase](Showcase) for examples on what can be done in XI

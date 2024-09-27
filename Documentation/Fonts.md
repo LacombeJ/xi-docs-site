@@ -27,31 +27,31 @@ At the time of writing this, TMP does not seem to support "Variable" fonts. Vari
 1. Find the fonts that you wish to include
 
 2. Add .ttf files to assets and include any required licenses
-  - Optional: Organize using the following structure as an example:
-    - Assets/Fonts/Noto
-      - NotoSans-Regular.ttf
-      - NotoSans-Italic.ttf
-      - NotoSans-Thin.ttf
-      - NotoSans-ThinItalic
-      - NotoSans-Black.ttf
-      - NotoSans-BlackItalic.ttf
-      - ... (others to include up to 9 weight variants, see below)
-      - LICENSE.txt (if required)
+    - Optional: Organize using the following structure as an example:
+        - Assets/Fonts/Noto
+            - NotoSans-Regular.ttf
+            - NotoSans-Italic.ttf
+            - NotoSans-Thin.ttf
+            - NotoSans-ThinItalic
+            - NotoSans-Black.ttf
+            - NotoSans-BlackItalic.ttf
+            - ... (others to include up to 9 weight variants, see below)
+            - LICENSE.txt (if required)
 
 3. Use [Font Asset Creator](https://docs.unity3d.com/Packages/com.unity.textmeshpro@4.0/manual/FontAssetsCreator.html) under `Windows > TextMeshPro > Font Asset Creator` to create an asset for each ttf
-  - after each generation, remember to click __Save as...__
-   - Use recommended settings (mostly copied from TMP provided LiberationSans):
-     - Sampling Point Size: Custom Size (86)
-     - Padding: 9
-     - Packing Method: Optimum
-     - Atlas Resolution: 1024 x 1024
-     - Character Set: ASCII
-     - Render Mode: "SDFAA_HINTED"
+    - after each generation, remember to click __Save as...__
+    - Use recommended settings (mostly copied from TMP provided LiberationSans):
+        - Sampling Point Size: Custom Size (86)
+        - Padding: 9
+        - Packing Method: Optimum
+        - Atlas Resolution: 1024 x 1024
+        - Character Set: ASCII
+        - Render Mode: "SDFAA_HINTED"
+
+4. Navigate to the "regular" font asset variant (ex: NotoSans-Regular.asset) and add in all of the font weights made (for both regular and italics typeface).
 
 {: .note }
 > When using "Extended ASCII" as character set option, I noticed some characters missing, So I switched option to use ASCII. However, I've read you may be able to also set character set to manual and add manually.
-
-4. Navigate to the "regular" font asset variant (ex: NotoSans-Regular.asset) and add in all of the font weights made (for both regular and italics typeface).
 
 ## Font Weights
 

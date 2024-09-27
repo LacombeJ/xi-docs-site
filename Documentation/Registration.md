@@ -24,7 +24,7 @@ public MyElement : XITextField
   // This registers TextField to be mapped to MyElement (instead of XITextField)
   public new class Registration : XIRegistration<MyElement, TextField>
   {
-    public override MyElement Construct(Mapping mapping)
+    public override MyElement Construct(XIMapping mapping)
     {
       return new MyElement(mapping);
     }
@@ -32,6 +32,6 @@ public MyElement : XITextField
 
   public MyElement() : base(new TextField()) { }
 
-  public MyElement(Mapping mapping) : base(mapping) { }
+  public MyElement(XIMapping mapping) : base(mapping) { }
 }
 ```

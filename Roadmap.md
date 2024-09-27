@@ -1,7 +1,7 @@
 ---
 title: Roadmap
 layout: page
-nav_order: 6
+nav_order: 7
 ---
 
 # Roadmap
@@ -20,6 +20,7 @@ nav_order: 6
 - __Themes:__ Built-in themes and styles
 
 ## Next
+- __Render Graph:__ Unity 6+ Rendering Support
 - __Shadows:__ Rendering HTML/CSS style shadow boxes
 - __Blur Filters:__ Guassian blur filters for UI and scene
 - __Numpad:__ Numpad keyboard sample (for editing number fields)
