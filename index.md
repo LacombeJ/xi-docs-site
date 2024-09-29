@@ -19,4 +19,4 @@ XI was made to bring world space support to UITK. Unlike the [older UI systems](
 - Check out the [Features](Features) to find out what is supported
 - Take a look at the [Showcase](Showcase) for examples on what can be done in XI
 - Find out what's currently being worked in the [Roadmap](Roadmap)
-
+- Asset store page: [XI - 3D and VR UI Framework](https://assetstore.unity.com/packages/tools/gui/xi-3d-and-vr-ui-framework-280590){:target="_blank" rel="noopener"}

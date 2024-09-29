@@ -6,6 +6,10 @@ nav_order: 6
 
 # Showcase
 
+## Asset
+
+<iframe width="736" height="414" src="https://www.youtube.com/embed/CQt7BUXqAi4" frameborder="0" allowfullscreen></iframe>
+
 ## UI Demo
 
 Create modern stylized UI with stylesheets to fit your use-case.

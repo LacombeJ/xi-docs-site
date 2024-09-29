@@ -2,6 +2,11 @@
 
 This project is the source for the XI website.
 
+## Installation Requirements
+
+- Ruby 3.1+
+- Bundle
+
 ## Building and previewing site locally
 
 With [Jekyll] and [Bundler] are installed on your computer:
