@@ -6,6 +6,28 @@ nav_order: 8
 
 # Changelog
 
+## [1.4.0] - 2024-10-21
+
+### Added
+- Image and Video elements
+- Additional properties to XISlider
+- Remove element function
+- Click dragging from tracker for XISlider
+- XIVisual and XIBuilder to add additional visuals to document
+- Border/corner sharp cut sdf shader
+
+### Fixed
+- Texture layout calculations
+- Demo slider progress tracker
+- Hierarchy mapping issues
+- TextField value updating
+- Border rendering visual artifact at certain angles
+
+### Changed
+- Refactor standard renderer
+- Alignment property in XIDocument
+- XI Render Feature asset guid
+
 ## [1.3.0] - 2024-09-26
 
 ### Added

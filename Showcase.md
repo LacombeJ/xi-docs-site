@@ -6,7 +6,11 @@ nav_order: 6
 
 # Showcase
 
-## Asset
+## Futuristic UI
+
+<iframe width="736" height="414" src="https://www.youtube.com/embed/pGeP6Bpeee0" frameborder="0" allowfullscreen></iframe>
+
+## Asset Demo
 
 <iframe width="736" height="414" src="https://www.youtube.com/embed/CQt7BUXqAi4" frameborder="0" allowfullscreen></iframe>
 
